@@ -3,9 +3,10 @@ import Banana from './img/banana.jpg';
 import Avocado from './img/avocado.jpg';
 import Kiwi from './img/kiwi.jpg';
 
-function hero() {
+export function hero() {
   //Create Hero Banner
   let hero = document.createElement("div");
+  hero.classList.add("hero");
 
   let seed = document.createElement("div");
   let seedImg = document.createElement("img");
@@ -31,9 +32,34 @@ function hero() {
   hero.appendChild(banana);
   hero.appendChild(avocado);
   hero.appendChild(kiwi);
-
-  hero.classList.add("hero");
   return hero;
 }
 
-export default hero;
+export function menu(){
+  let header = document.createElement("header");
+  let title = document.createElement("h1");
+  title.textContent = "FreshEats!";
+
+  let navBar = document.createElement("nav");
+  let navList = document.createElement("ul");
+
+  let about = document.createElement("li");
+  about.textContent = "About";
+
+  let menu = document.createElement("li");
+  menu.textContent = "Menu";
+
+  let contact = document.createElement("li");
+  contact.textContent = "Contact";
+
+  navList.appendChild(about);
+  navList.appendChild(menu);
+  navList.appendChild(contact);
+
+  navBar.appendChild(navList);
+
+  header.appendChild(title);
+  header.appendChild(navBar)
+  
+  return header;
+}

@@ -1,5 +1,6 @@
 import './style.css';
-import hero from './hero.js';
+import {hero, menu} from './hero.js';
 
 document.body.appendChild(hero());
+document.body.appendChild(menu());
 alert("Hello Webpack");
