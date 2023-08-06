@@ -3,7 +3,7 @@ import FoodPrep from './img/food-prep.jpg';
 export default function about(){
   let about = document.createElement("div");
   about.classList.add("about");
-  
+
   let aboutTitle = document.createElement("h2");
   aboutTitle.textContent = "About Us";
   
@@ -13,7 +13,7 @@ export default function about(){
   let motto = document.createElement("strong");
   motto.textContent = '"Fresh Food and Fresher Smiles"';
   let aboutText = document.createElement("p");
-  aboutText.textContent = "EatFresh! is more than just about eating healthy,"
+  aboutText.textContent = "FreshEats! is more than just about eating healthy,"
                           + " it's about making you fall in love with healthy food."
                           + " Every dish is meticulously prepared so that it is a"
                           + " masterpiece of color, texture and flavour. Whether it be our smoothies, salads, fruitbowls,"
