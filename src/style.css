@@ -8,16 +8,16 @@ body {
   background-color: black;
   color: white;
   text-align: center;
-  overflow: scroll;
 }
 .hero {
   display: grid;
   grid-template: 1fr/ 1fr 1fr 1fr 1fr;
   background-color: teal;
   height: 75vh;
+  box-sizing: border-box;
 }
 
-img {
+.hero img {
   width: 100%;
   height: auto;
 }
@@ -33,8 +33,8 @@ header {
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin: 1rem;
+  font-size: 2.4rem;
+  margin: 0.5rem;
 }
 
 ul {
@@ -50,7 +50,22 @@ header li {
   text-decoration: underline;
   font-weight: 800;
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+}
+
+header.small-nav {
+  padding: 0.2rem 1rem;
+  font-size: 2rem;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.small-nav ul{
+  gap: 2rem;
+}
+header.small-nav h1{
+  margin: 0.2rem;
 }
 
 .about {
