@@ -10,9 +10,11 @@ body {
 }
 .hero {
   display: grid;
-  grid-template: 1fr / 1fr 1fr 1fr 1fr;
+  grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr;
   background-color:teal;
-  border-bottom: 2rem solid teal;
+  row-gap: 2rem;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 img {
@@ -20,8 +22,16 @@ img {
   height: auto;
 }
 
+header {
+  padding: 1rem;
+  position: sticky;
+  grid-column: 1 / 5;
+  background-color: black;
+}
+
 h1 {
-  margin: 2rem 0;
+  margin: 1rem 0;
+  font-size: 2.5rem;
 }
 
 ul {
@@ -31,10 +41,32 @@ ul {
   display: flex;
   justify-content: center;
   gap: 6rem;
+  font-size: 1.25rem;
 }
 
 header li {
   text-decoration: underline;
   font-weight: 800;
   cursor: pointer;
+}
+
+.about {
+  padding: 10vh 15vw;
+  background: linear-gradient(0.45turn, #3f87a6, #f69d3c);
+  color: black;
+}
+
+.about img {
+  width: 50vw;
+  height: auto;
+  border-radius: 1rem;
+  margin: 1.5rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+}
+
+.about p {
+  font-size: 1.25rem;
 }
