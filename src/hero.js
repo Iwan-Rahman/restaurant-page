@@ -32,7 +32,6 @@ export function hero() {
   hero.appendChild(banana);
   hero.appendChild(avocado);
   hero.appendChild(kiwi);
-  hero.appendChild(menu());
   return hero;
 }
 
