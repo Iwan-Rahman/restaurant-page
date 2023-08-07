@@ -2,7 +2,7 @@ import './style.css';
 import {hero, menu as nav} from './hero.js';
 import about from './about.js';
 import menu from './menu.js';
-
+import contact from './contact.js';
 
 let header = nav();
 document.body.appendChild(hero());
@@ -18,6 +18,7 @@ window.onscroll = function(){
   }
 }
 
-document.body.appendChild(about());
-document.body.appendChild(menu());
+// document.body.appendChild(about());
+// document.body.appendChild(menu());
+document.body.appendChild(contact());
 alert("Hello Webpack");
