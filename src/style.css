@@ -46,6 +46,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 ul {
@@ -142,6 +143,10 @@ header.small-nav h1{
 
 
 /* Contact */
+
+.contact {
+  padding: 0rem 0rem 2rem 0rem;
+}
 
 .contact label, .contact p {
   font-size: 1.5rem;

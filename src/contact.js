@@ -1,4 +1,4 @@
-import Github from './img/social/github-mark-white.svg';
+import Github from './img/social/github-mark.svg';
 import Discord from './img/social/discord-mark-blue.svg';
 import Email from './img/social/email.svg';
 
@@ -26,7 +26,7 @@ export default function contact(){
   contactForm.appendChild(msgContent);
   contactForm.appendChild(formBtn);
 
-  let dividingLine = document.querySelector("div");
+  let dividingLine = document.createElement("div");
   dividingLine.classList.add("line");
 
   let socials = document.createElement("div");
